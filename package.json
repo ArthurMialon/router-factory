@@ -1,8 +1,8 @@
 {
-  "name": "router",
-  "version": "0.0.5",
-  "description": "A really simple nodejs router for your application.",
-  "main": "lib/router.js",
+  "name": "router-factory",
+  "version": "1.0.0",
+  "description": "A really simple express/laravel like router for your application.",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "compile": "rm -rf lib && babel --presets es2015 -d lib/ src/",

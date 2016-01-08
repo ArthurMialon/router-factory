@@ -1,3 +1,4 @@
 src/
 index.js
 lib/example.js
+*.log
