@@ -1,0 +1,21 @@
+{
+  "name": "router",
+  "version": "0.0.5",
+  "description": "A really simple nodejs router for your application.",
+  "main": "lib/router.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "compile": "rm -rf lib && babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Mialon <arthurmialon@gmail.com> (http://www.arthurmialon.fr/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.4.0",
+    "babel-preset-es2015": "6.3.13"
+  },
+  "dependencies": {
+    "body": "5.1.0"
+  }
+}
