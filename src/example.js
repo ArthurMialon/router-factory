@@ -3,8 +3,9 @@ import Router from './router';
 
 const router = new Router();
 
-router.post('users/{id}', [], (req, res) => {
-  console.log(req.body);
+router.get('users/{id}', [], (req, res) => {
+  console.log(req.query);
+  console.log(req.params);
   res.end("ok");
 });
 
@@ -18,7 +19,7 @@ router.prefix('articles' , function() {
   });
 
   this.post('/{id}/comments', [], (req, res) => {
-
+    console.log(req.body);
   });
 });
 

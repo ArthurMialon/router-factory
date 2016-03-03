@@ -190,6 +190,7 @@ export default class Router {
       /* Route find - get parameters */
       if (route != null) {
         request.params = (route.route.url.base != '*') ? route.route.parseParams(request.url) : {};
+        request.query  = route.route.parseQuery(request.url);
       }
 
       /* Return handling or error request */
